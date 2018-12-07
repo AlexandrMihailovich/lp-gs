@@ -1,0 +1,50 @@
+@media (min-width: $screen-xs-min) {
+  .header {
+    .nav-list {
+      display: block;
+      > li {
+        flex: 1;
+        display: block;
+        > a {
+          width: 100%;
+        }
+      }
+    }
+    .header__menu {
+      a {
+        padding-bottom: (($header-menu-height / 2 - $header-menu-line-height) / 2);
+        padding-top: (($header-menu-height / 2 - $header-menu-line-height) / 2);
+      }
+    }
+    .nav-box {
+      height: $header-menu-height / 2;
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+
+}
+
+@media (min-width: $screen-md-min) {
+  .header {
+    .nav-list {
+      display: flex;
+      > li {
+        flex: 1;
+        > a {
+          width: 100%;
+        }
+      }
+    }
+    .header__menu {
+      a {
+        padding-bottom: $header-menu-padding-vertical;
+        padding-top: $header-menu-padding-vertical;
+      }
+    }
+    .nav-box {
+      height: $header-menu-height;
+    }
+  }
+}
